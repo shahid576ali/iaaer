@@ -4,35 +4,85 @@ import { X, MenuIcon } from "lucide-react";
 
 const navItems = [
   {
-    title: "Home",
+    title: "About",
     url: "/",
+    subItems: [
+      { title: "Mission Statement", url: "/products/electronics" },
+      { title: "History", url: "/products/clothing" },
+      { title: "Constitution", url: "/products/clothing" },
+      { title: "Executive Committee", url: "/products/clothing" },
+      { title: "Board of Advisors", url: "/products/clothing" },
+      { title: "Council", url: "/products/clothing" },
+      { title: "Committee", url: "/products/clothing" },
+      { title: "Institutional Members", url: "/products/clothing" },
+      { title: "University Members", url: "/products/clothing" },
+      { title: "Meetings & Financials", url: "/products/clothing" },
+      { title: "Privacy Policy", url: "/products/clothing" },
+      { title: "Contact Us", url: "/products/clothing" },
+      { title: "Cookie Policy", url: "/products/clothing" },
+    ],
   },
   {
-    title: "Products",
+    title: "Conferences and Events",
     url: "/products",
     subItems: [
-      { title: "Electronics", url: "/products/electronics" },
-      { title: "Clothing", url: "/products/clothing" },
-      { title: "Books", url: "/products/books" },
+      { title: "Current", url: "/products/electronics" },
+      { title: "Archive", url: "/products/clothing" }
     ],
   },
   {
-    title: "Services",
+    title: "News",
     url: "/services",
     subItems: [
-      { title: "Consulting", url: "/services/consulting" },
-      { title: "Design", url: "/services/design" },
-      { title: "Development", url: "/services/development" },
+      { title: "Current", url: "/services/consulting" },
+      { title: "Quarterly Newsletter", url: "/services/design" },
+      { title: "Archive", url: "/services/development" },
     ],
   },
   {
-    title: "About",
+    title: "Research",
     url: "/about",
+    subItems:[
+      {title: "Affiated Journals",url:"/journals"},
+      {title: "Research Grants",url:"/grants"},
+      {title: "ACCA/IAAER Schorls Program",url:"/journals"},
+      {title: "IAAER/ACCA Early Career Researcher Development Program",url:"/journals"},
+    ]
   },
   {
-    title: "Contact",
-    url: "/contact",
+    title: "Resources",
+    url: "/resources",
+    subItems:[
+      {title: "IAAER Standard setting Insights",url:"/journals"},
+      {title: "Institutional Members Resources",url:"/grants"},
+      {title: "IASB Resources",url:"/journals"},
+      {title: "IASB Resources",url:"/journals"},
+      {title: "IFAC Resources",url:"/journals"},
+      {title: "IAASB Resources",url:"/journals"},
+      {title: "IESBA Resources",url:"/journals"},
+      {title: "IPSASB Resources",url:"/journals"},
+      {title: "KPMG Resources",url:"/journals"},
+      {title: "ACCA Resources",url:"/journals"},
+    ]
   },
+  {
+    title: "Membership",
+    url: "/membership",
+},
+ {
+  title: "Sign In",
+  url: "/signin",
+},
+{
+  title: "Member Content",
+  url: "/membership",
+  subItems:[
+    {title: "Webinars",url:"/journals"},
+    {title: "Presentations",url:"/grants"},
+    {title: "IASPlus IASB and ISSB Meeting Updates",url:"/journals"},
+    {title: "Report to IAAER Activities",url:"/journals"},
+  ]
+},
 ];
 
 const Navbar = () => {
@@ -68,7 +118,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <a href="/" className="text-white text-2xl font-bold">
-              Logo
+              IAAER
             </a>
           </div>
           <div className="hidden md:block">
@@ -94,14 +144,14 @@ const Navbar = () => {
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -10 }}
                         transition={{ duration: 0.3 }}
-                        className="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5"
+                        className="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-gray-700 ring-1 ring-[#d4d4d4] ring-opacity-5"
                       >
                         <div className="py-1" role="menu">
                           {item.subItems.map((subItem, subIndex) => (
                             <motion.a
                               key={subIndex}
                               href={subItem.url}
-                              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                              className="block px-4 py-2 text-sm text-white hover:bg-gray-100 hover:text-gray-900"
                               role="menuitem"
                               initial={{ opacity: 0 }}
                               animate={{ opacity: 1 }}

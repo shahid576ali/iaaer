@@ -1,5 +1,5 @@
 import { AboutSection } from "./components/about/AboutSection"
-import { HighlightsSection } from "./components/highlights/HighlightsSection"
+import {HighlightsSection} from "./components/highlights/HighlightsSection"
 import Navbar from "./components/nav/Navbar"
 import { Sidebar } from "./components/sidebar/Sidebar"
 export default function Page() {
