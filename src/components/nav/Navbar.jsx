@@ -113,7 +113,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gray-800" ref={navRef}>
+    <nav className="bg-gradient-to-r from-purple-400 to-purple-600 fixed top-0 left-0 right-0 z-50" ref={navRef}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
@@ -127,7 +127,7 @@ const Navbar = () => {
                 <div key={index} className="relative group">
                   <a
                     href={item.url}
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className="text-white hover:bg-gray-100 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium"
                     onClick={(e) => {
                       if (item.subItems) {
                         e.preventDefault();
@@ -144,7 +144,7 @@ const Navbar = () => {
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -10 }}
                         transition={{ duration: 0.3 }}
-                        className="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-gray-700 ring-1 ring-[#d4d4d4] ring-opacity-5"
+                        className="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-gradient-to-r from-purple-400 to-purple-600 ring-1 ring-[#d4d4d4] ring-opacity-5"
                       >
                         <div className="py-1" role="menu">
                           {item.subItems.map((subItem, subIndex) => (
@@ -172,7 +172,7 @@ const Navbar = () => {
             <button
               onClick={toggleMobileMenu}
               type="button"
-              className="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700"
+              className="inline-flex items-center justify-center p-2 rounded-md  hover:text-white"
             >
               {mobileMenuOpen ? <X /> : <MenuIcon />}
             </button>
@@ -186,7 +186,7 @@ const Navbar = () => {
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-gray-800"
+            className="md:hidden px-2 pt-2 pb-3 space-y-1 sm:px-3"
           >
             {navItems.map((item, index) => (
               <motion.div
@@ -197,7 +197,7 @@ const Navbar = () => {
               >
                 <a
                   href={item.url}
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  className="text-gray-100 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                   onClick={(e) => {
                     if (item.subItems) {
                       e.preventDefault();
@@ -220,7 +220,7 @@ const Navbar = () => {
                         <motion.a
                           key={subIndex}
                           href={subItem.url}
-                          className="text-gray-400 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                          className="text-gray-200 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                           initial={{ opacity: 0 }}
                           animate={{ opacity: 1 }}
                           transition={{ duration: 0.3 }}
