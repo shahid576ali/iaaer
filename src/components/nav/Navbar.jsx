@@ -172,7 +172,7 @@ const Navbar = () => {
             <button
               onClick={toggleMobileMenu}
               type="button"
-              className="inline-flex items-center justify-center p-2 rounded-md  hover:text-white"
+              className="inline-flex items-center justify-center p-2 rounded-md text-white"
             >
               {mobileMenuOpen ? <X /> : <MenuIcon />}
             </button>
@@ -197,7 +197,7 @@ const Navbar = () => {
               >
                 <a
                   href={item.url}
-                  className="text-gray-100 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  className="text-white hover:bg-gray-100 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium"
                   onClick={(e) => {
                     if (item.subItems) {
                       e.preventDefault();
@@ -220,7 +220,7 @@ const Navbar = () => {
                         <motion.a
                           key={subIndex}
                           href={subItem.url}
-                          className="text-gray-200 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                          className="text-gray-200 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                           initial={{ opacity: 0 }}
                           animate={{ opacity: 1 }}
                           transition={{ duration: 0.3 }}
