@@ -26,7 +26,7 @@ export default function Insights() {
 
             <div className="mt-6">
               <img
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-HwFKXjCDYTIxovRDNFebgGzC0uY9mt.png"
+                src="https://www.iaaer.org/pictures/W1siZiIsIjIwMjQvMDcvMTkvMDEvMDUvMTIvNjVkNDgwZDUtOGRhMy00ZDRjLWI5ZDMtM2UxMTkwNzYyOWE0L0lGQUMgSUZBQy5qcGciXSxbInAiLCJlbmNvZGUiLCJqcGVnIiwiLXF1YWxpdHkgODUiXV0/IFAC%20IFAC.jpeg?sha=8a812557edfdfd8d"
                 alt="IFAC Sustainability Assurance Infographic"
                 className="w-full rounded-lg"
               />
