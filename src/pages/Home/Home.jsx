@@ -1,8 +1,9 @@
 import React from "react";
-import { AboutSection } from "../components/about/AboutSection";
-import { Badge } from "../components/Badge";
-import { Card } from "../components/card";
-import Conferences from "../components/Conference";
+import AboutSection from "../../components/about/AboutSection";
+import Badge from "./Badge";
+import Card from "./Card";
+import Conferences from "./Conference";
+import Insights from "./Insigts";
 
 const Home = () => {
   return (
@@ -133,6 +134,96 @@ const Home = () => {
               </div>
             </div>
           </Card>
+            {/* IASB Research Forum Card */}
+            <div className="rounded-lg shadow-sm border border-gray-200 p-6">
+              <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+                <div className="flex-1">
+                  <h2 className="text-xl font-semibold text-gray-900">IASB Research Forum 2025 Call for Papers</h2>
+  
+                  <div className="mt-4 prose text-gray-600">
+                    <p>
+                      IAAER is pleased to share the IASB's invitation for academic submissions for the 2025 IASB Research
+                      Forum, in partnership with the academic journal, Accounting Horizons. We encourage the IAAER
+                      community to take part and showcase the impact of academic research in advancing IFRS and global
+                      financial reporting practices.
+                    </p>
+                  </div>
+  
+                  <div className="mt-6 flex flex-wrap items-center gap-4">
+                    <button className="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors">
+                      Read Full Details
+                      <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+  
+                <div className=" rounded-lg p-4 md:w-64">
+                  <div className="text-blue-900">
+                    <div className="text-sm font-medium uppercase tracking-wide">Submission Deadline</div>
+                    <div className="mt-1 text-2xl font-bold">31 March 2025</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            {/* Paper Development Workshop Card */}
+            <div className="rounded-lg mt-7 shadow-sm border border-gray-200 p-6">
+              <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+                <div className="flex-1">
+                  <h2 className="text-xl font-semibold text-gray-900">
+                    Call for Submissions: IAAER Paper Development Workshop
+                  </h2>
+  
+                  <div className="mt-4 prose text-gray-600">
+                    <p>
+                      The IAAER, in collaboration with the 2025 SAAA Biennial Conference, invites submissions for its
+                      Paper Development Workshop (PDW) in Cape Town, South Africa, on 27 June 2025.
+                    </p>
+                    <p>
+                      The PDW aims to support African accounting scholars—PhD holders and candidates—by providing expert
+                      feedback from internationally recognized researchers to enhance the quality and publication
+                      potential of their work.
+                    </p>
+                  </div>
+  
+                  <div className="mt-6 space-y-4">
+                    <div className="flex flex-wrap items-center gap-4">
+                      <button className="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors">
+                        View Submission Guidelines
+                        <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        </svg>
+                      </button>
+                    </div>
+  
+                    <div className="flex items-center text-gray-600">
+                      <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                        />
+                      </svg>
+                      For inquiries, contact Professor Donna Street at{" "}
+                      <a href="mailto:dstreet1@udayton.edu" className="text-blue-600 hover:text-blue-800 ml-1">
+                        dstreet1@udayton.edu
+                      </a>
+                    </div>
+                  </div>
+                </div>
+  
+                <div className="bg-blue-50 rounded-lg p-4 md:w-64">
+                  <div className="text-blue-900">
+                    <div className="text-sm font-medium uppercase tracking-wide">Submission Deadline</div>
+                    <div className="mt-1 text-2xl font-bold">1 April 2025</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <Insights />
         </div>
       </div>
     </div>

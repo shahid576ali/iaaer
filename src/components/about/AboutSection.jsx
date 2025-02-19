@@ -1,4 +1,4 @@
-export function AboutSection() {
+function AboutSection() {
     return (
       <section>
         <h2 className="text-3xl font-bold text-gray-900 mb-6">About the IAAER</h2>
@@ -13,5 +13,7 @@ export function AboutSection() {
       </section>
     )
   }
+
+  export default AboutSection;
   
   

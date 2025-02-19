@@ -4,7 +4,7 @@ export default function Conferences() {
   const [activeTab, setActiveTab] = useState("upcoming")
 
   return (
-    <div className="min-h-screen bg-gray-50 py-8">
+    <div className="h-[1100px] bg-gray-50 py-8">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-3xl font-bold text-gray-900 mb-8">Conferences and Calls for Papers</h1>
 
@@ -52,7 +52,7 @@ export default function Conferences() {
                 <img
                   src="https://www.iaaer.org/pictures/W1siZiIsIjIwMjQvMDcvMTkvMDEvMzIvMTkvNmNkNzgyNWItY2NmYi00M2Q3LTk5NjgtNmNjZTUzYTgwNjkzL1NBQUEgQklFTk5JQUwgSU5URVJOQVRJT05BTCBDT05GRVJFTkNFX2JfcGFnZS0wMDAxLmpwZyJdLFsicCIsImVuY29kZSIsImpwZWciLCItcXVhbGl0eSA4NSJdXQ/New%20SAAA%20Poster.jpeg?sha=0763f79c90f5f9de"
                   alt="SAAA/IAAER Conference in Cape Town"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain"
                 />
               </div>
               <div className="p-6">
