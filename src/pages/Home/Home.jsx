@@ -4,6 +4,7 @@ import Badge from "./Badge";
 import Card from "./Card";
 import Conferences from "./Conference";
 import Insights from "./Insigts";
+import Publication from "./Publication";
 
 const Home = () => {
   return (
@@ -223,12 +224,13 @@ const Home = () => {
                 </div>
               </div>
             </div>
+            <Conferences />
             <Insights />
+            <Publication />
         </div>
       </div>
     </div>
     </div>
-    <Conferences />
     </>
   );
 };
