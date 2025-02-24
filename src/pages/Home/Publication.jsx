@@ -76,7 +76,7 @@ export default function Publication() {
                   <a
                     key={pub.title}
                     href={pub.link}
-                    className="flex items-center p-4 rounded-lg border border-gray-200 hover:border-blue-500 transition-colors"
+                    className="flex items-center p-4 rounded-lg border border-gray-200 hover:scale-[1.02] transition-all hover:bg-blue-100 hover:border-blue-500"
                   >
                     <div className="mr-4">
                       {pub.type === "newsletter" && (
@@ -127,7 +127,7 @@ export default function Publication() {
                   <a
                     key={paper.title}
                     href={paper.link}
-                    className="block p-4 rounded-lg border border-gray-200 hover:border-blue-500 transition-colors"
+                    className="block p-4 rounded-lg border border-gray-200 transition-all hover:bg-blue-100 hover:scale-[1.02] hover:border-blue-500"
                   >
                     <div className="flex items-center">
                       <svg className="w-6 h-6 text-blue-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -154,7 +154,7 @@ export default function Publication() {
               {membershipTypes.map((membership) => (
                 <div
                   key={membership.type}
-                  className="p-6 rounded-lg border border-gray-200 hover:border-blue-500 transition-colors"
+                  className="p-6 rounded-lg border border-gray-200 hover:scale-[1.02] hover:bg-blue-100 transition-all hover:border-blue-500"
                 >
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">{membership.type}</h3>
                   <p className="text-gray-600 mb-4">{membership.description}</p>

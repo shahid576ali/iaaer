@@ -105,7 +105,7 @@ export default function Insights() {
         <div className="mt-8 bg-white rounded-lg shadow-sm border border-gray-200 p-6">
           <h2 className="text-xl font-semibold text-gray-900 mb-6">Open Access Papers</h2>
           <div className="space-y-4">
-            <div className="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
+            <div className="flex items-center justify-between p-4 bg-gray-50 hover:bg-gray-200 rounded-lg">
               <div className="pr-4">
                 <h3 className="font-medium text-gray-900">Political Ideology Shapes Reporting Regulation</h3>
                 <p className="text-sm text-gray-600">SEC Commissioners' Views on IFRS for US Issuers</p>
@@ -116,7 +116,7 @@ export default function Insights() {
               </button>
             </div>
 
-            <div className="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
+            <div className="flex items-center justify-between p-4 bg-gray-50 hover:bg-gray-200 rounded-lg">
               <div className="pr-4">
                 <h3 className="font-medium text-gray-900">Research on extended external reporting assurance</h3>
                 <p className="text-sm text-gray-600">An update on recent developments</p>
@@ -127,7 +127,7 @@ export default function Insights() {
               </button>
             </div>
 
-            <div className="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
+            <div className="flex items-center justify-between p-4 bg-gray-50 hover:bg-gray-200 rounded-lg">
               <div className="pr-4">
                 <h3 className="font-medium text-gray-900">Research on Audit evidence, technology, and judgement</h3>
                 <p className="text-sm text-gray-600">A review of the literature in response to ED-500</p>
