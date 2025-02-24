@@ -37,7 +37,7 @@ export default function Insights() {
         {/* Article Grid */}
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {/* AI Revolution Article */}
-          <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+          <div className="bg-white hover:bg-purple-300 cursor-pointer rounded-lg shadow-sm border border-gray-200 p-6">
             <div className="flex items-start gap-4">
               <div className="h-12 w-12 rounded-full bg-purple-100 flex items-center justify-center flex-shrink-0">
                 <Bot className="h-6 w-6 text-purple-600" />
@@ -57,7 +57,7 @@ export default function Insights() {
           </div>
 
           {/* Future of Education Article */}
-          <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+          <div className="bg-white rounded-lg hover:bg-green-300 cursor-pointer shadow-sm border border-gray-200 p-6">
             <div className="flex items-start gap-4">
               <div className="h-12 w-12 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0">
                 <BookOpen className="h-6 w-6 text-green-600" />
@@ -79,7 +79,7 @@ export default function Insights() {
           </div>
 
           {/* Global Developments Article */}
-          <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+          <div className="bg-white rounded-lg hover:bg-blue-300 cursor-pointer shadow-sm border border-gray-200 p-6">
             <div className="flex items-start gap-4">
               <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
                 <FileText className="h-6 w-6 text-blue-600" />
