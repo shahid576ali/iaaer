@@ -7,10 +7,7 @@ export default function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             
             {/* General Inquiries */}
-            <div>
-              <h3 className="text-xl font-semibold mb-2">General Inquiries</h3>
-              <p className="text-gray-400">admin@iaaer.org</p>
-            </div>
+            
   
             {/* President Section */}
             <div>
@@ -49,10 +46,15 @@ export default function Footer() {
             </div>
           </div>
   
+          <div className="mt-2">
+              <h3 className="text-xl font-semibold mb-2">General Inquiries</h3>
+              <p className="text-gray-400">admin@iaaer.org</p>
+            </div>
           {/* Copyright */}
           <div className="text-center mt-8 border-t border-gray-700 pt-4 text-gray-400">
             © {new Date().getFullYear()} IAAER. All rights reserved.
           </div>
+          
         </div>
       </footer>
     );
