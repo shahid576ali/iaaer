@@ -11,10 +11,10 @@ import images from "../../assets/images";
 const Home = () => {
   return (
     <>
-      <div className="lg:col-span-2 lg:ml-[100px] space-y-12">
+      <div className="lg:col-span-2 lg:ml-[150px] space-y-12">
         <AboutSection />
-        <div className="min-h-screen bg-transparent">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="min-h-screen py-8">
+          <div className="max-w-6xl">
             <h1 className="text-3xl font-bold text-gray-900 mb-8 hover:text-blue-600 transition-colors">Highlights and Announcements</h1>
 
             <div className="space-y-6">
