@@ -37,10 +37,10 @@ export default function Insights() {
         {/* Article Grid */}
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {/* AI Revolution Article */}
-          <div className="bg-white hover:bg-purple-300 cursor-pointer rounded-lg shadow-sm border border-gray-200 p-6">
+          <div className="bg-white hover:bg-blue-300 cursor-pointer rounded-lg shadow-sm border border-gray-200 p-6">
             <div className="flex items-start gap-4">
-              <div className="h-12 w-12 rounded-full bg-purple-100 flex items-center justify-center flex-shrink-0">
-                <Bot className="h-6 w-6 text-purple-600" />
+              <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
+                <Bot className="h-6 w-6 text-blue-600" />
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-gray-900">The AI Revolution in Accounting</h3>
@@ -48,7 +48,7 @@ export default function Insights() {
                   Discover how generative AI is transforming the accounting profession. This article delves into the
                   implications, opportunities, and challenges brought about by AI advancements.
                 </p>
-                <button className="mt-4 text-purple-600 hover:text-purple-700 inline-flex items-center">
+                <button className="mt-4 text-blue-600 hover:text-blue-700 inline-flex items-center">
                   Read more
                   <ExternalLink className="h-4 w-4 ml-2" />
                 </button>
@@ -57,10 +57,10 @@ export default function Insights() {
           </div>
 
           {/* Future of Education Article */}
-          <div className="bg-white rounded-lg hover:bg-green-300 cursor-pointer shadow-sm border border-gray-200 p-6">
+          <div className="bg-white rounded-lg hover:bg-blue-300 cursor-pointer shadow-sm border border-gray-200 p-6">
             <div className="flex items-start gap-4">
-              <div className="h-12 w-12 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0">
-                <BookOpen className="h-6 w-6 text-green-600" />
+              <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
+                <BookOpen className="h-6 w-6 text-blue-600" />
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-gray-900">
@@ -70,7 +70,7 @@ export default function Insights() {
                   See how the University of Pretoria's AE-Bot is revolutionizing accounting education with AI, bridging
                   theory and practice through personalized responses.
                 </p>
-                <button className="mt-4 text-green-600 hover:text-green-700 inline-flex items-center">
+                <button className="mt-4 text-blue-600 hover:text-blue-700 inline-flex items-center">
                   Read more
                   <ExternalLink className="h-4 w-4 ml-2" />
                 </button>
