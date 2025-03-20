@@ -1,15 +1,15 @@
 import linkedin from './LinkedIn.png'
 import kpmg from './kpmg.jpeg'
 import acca from './acca.jpeg'
-import propose from './proposol.png'
-import program from './research.png'
+import pro from './proposal1.png'
+import searc from './reserch.png'
 
 const images = {
     linkedin,
     kpmg,
     acca,
-    propose,
-    program
+    pro,
+    searc
 }
 
 export default images

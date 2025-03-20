@@ -50,7 +50,7 @@ export default function Publication() {
   ]
 
   return (
-    <div className="min-h-screen py-8">
+    <div className="h-aut py-8">
       <div className="max-w-6xl">
         {/* Tab Navigation */}
         <div className="flex space-x-1 rounded-xl bg-gray-200 p-1 mb-8">
