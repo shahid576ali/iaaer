@@ -81,7 +81,7 @@ const Home = () => {
                         </p>
                       </div>
 
-                      <button className="inline-flex items-center px-4 py-2 border bg-blue-50 border-blue-600 text-blue-600 rounded-md hover:bg-blue-600 hover:text-white transition-colors">
+                      <button className="inline-flex items-center px-4 py-2 border bg-blue-50 border-blue-600 text-blue-600 rounded-md hover:bg-blue-600 cursor-pointer hover:text-white transition-colors">
                         Access Proposal Details
                         <svg
                           className="w-4 h-4 ml-2"
@@ -137,19 +137,18 @@ const Home = () => {
                       </div>
                       <div
                         className={`
-              bg-blue-50 border-l-4 border-blue-500 mt-8 rounded-lg p-4 mb-4
+              bg-gradient-to-r from-green-50 to-blue-50 border-l-4 border-green-500 mt-8 rounded-lg p-4 mb-4
               ${isPulsing ? "animate-pulse" : ""}
-              shadow-md
             `}
                       >
-                        <p className="text-sm font-medium text-blue-800">
+                        <p className="text-sm font-medium text-green-800">
                           Voting Period: 06:00 - 18:00 EST
                         </p>
                       </div>
 
                       <a
                         href="#"
-                        className="inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors mt-2"
+                        className="inline-flex items-center text-green-600 hover:bg-green-600 hover:text-white border border-green-500 rounded-[4px] py-2 px-14 bg-green-50 transition-colors mt-2"
                       >
                         View Recipients
                         <svg
