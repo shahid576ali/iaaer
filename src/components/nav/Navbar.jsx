@@ -85,20 +85,6 @@ const navItems = [
       }
     ],
   },
-  // {
-  //   title: "Resources",
-  //   subItems: [
-  //     {title: "IAAER Standard setting Insights", url: "/resources/iaaer-standard-setting-insights"},
-  //     {title: "Institutional Members Resources", url: "/resources/institutional-members-resources"},
-  //     {title: "IASB Resources", url: "/resources/iasb-resources"},
-  //     {title: "IFAC Resources", url: "/resources/ifac-resources"},
-  //     {title: "IAASB Resources", url: "/resources/iaasb-resources"},
-  //     {title: "IESBA Resources", url: "/resources/iesba-resources"},
-  //     {title: "IPSASB Resources", url: "/resources/ipsasb-resources"},
-  //     {title: "KPMG Resources", url: "/resources/kpmg-resources"},
-  //     {title: "ACCA Resources", url: "/resources/acca-resources"},
-  //   ]
-  // },
   {
     title: "Membership",
     url: "/membership",

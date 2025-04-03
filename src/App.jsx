@@ -1,10 +1,11 @@
 import Footer from "./components/footer/Footer";
 import Navbar from "./components/nav/Navbar";
 import Home from "./pages/Home/Home";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Current from "./pages/Home/Current.jsx";
-import Newsletter from "./pages/Home/QuarterlyNewsLetter.jsx";
-import Archive from "./pages/Home/Archive.jsx";
+import { Route, Routes } from "react-router-dom";
+import Current from './pages/News/Current/Current'
+import Archive from './pages/News/Archive/Archive'
+import Newsletter from "./pages/News/Newsletters/NewsLetter";
+
 
 export default function Page() {
   return (
@@ -14,7 +15,7 @@ export default function Page() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/news/current" element={<Current />} />
-            <Route path="/news/quarterly-newsletter" element={<Newsletter />} />
+            <Route path="/news/newsletters" element={<Newsletter />} />
             <Route path="/news/archive" element={<Archive />} />
           </Routes>
         </main>
