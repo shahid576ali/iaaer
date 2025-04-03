@@ -10,16 +10,14 @@ export default function Page() {
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
-      <BrowserRouter>
         <main className="max-w-full lg:mr-28 mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/services/consulting" element={<Current />} />
-            <Route path="/services/design" element={<Newsletter />} />
-            <Route path="/services/development" element={<Archive />} />
+            <Route path="/news/current" element={<Current />} />
+            <Route path="/news/quarterly-newsletter" element={<Newsletter />} />
+            <Route path="/news/archive" element={<Archive />} />
           </Routes>
         </main>
-      </BrowserRouter>
       <Footer />
     </div>
   );
