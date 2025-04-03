@@ -14,13 +14,12 @@ const navItems = [
       { title: "Executive Committee", url: "/about/executive-committee" },
       { title: "Board of Advisors", url: "/about/board-of-dvisors" },
       { title: "Council", url: "/about/council" },
-      { title: "Committee", url: "/about/committee" },
+      { title: "Committees", url: "/about/committee" },
       { title: "Institutional Members", url: "/about/institutional-members" },
       { title: "University Members", url: "/about/university-members" },
       { title: "Meetings & Financials", url: "/about/meetings-financials" },
       { title: "Privacy Policy", url: "/about/privacy-policy" },
-      { title: "Contact Us", url: "/about/contact-us" },
-      { title: "Cookie Policy", url: "/about/cookie-policy" },
+      { title: "Contact Us", url: "/about/contact-us" }
     ],
   },
   {
@@ -34,7 +33,7 @@ const navItems = [
     title: "News",
     subItems: [
       { title: "Current", url: "/news/current" },
-      { title: "Quarterly Newsletter", url: "/news/quarterly-newsletter" },
+      { title: "Newsletters", url: "/news/newsletters" },
       { title: "Archive", url: "/news/archive" },
     ],
   },
@@ -44,8 +43,24 @@ const navItems = [
       { title: "Affiliated Journals", url: "/research/affiliated-journals" },
       { title: "Research Grants", url: "/research/research-grants" },
       {
+        title : "Informing the IAASB",
+        url : "/research/informing-the-iaasb"
+      },
+      {
+        title : "Informing the IAESB",
+        url : "/research/informing-the-iaesb"
+      },
+      {
+        title : "Informing the IASB",
+        url : "/research/informing-the-iasb"
+      },
+      {
         title: "ACCA/IAAER Scholars Program",
         url: "/research/acca-iaaer-scholars-program",
+      },
+      {
+        title : "Call for Papers",
+        url : "/research/call-for-papers"
       },
       {
         title: "IAAER/ACCA Early Career Researcher Development Program",
@@ -138,7 +153,7 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 z-50 w-full border-b border-gray-200 bg-gray-100 shadow">
-      <div className=" px-4">
+      <div className="px-4 lg:mr-10">
         <div className="flex items-center justify-between lg:justify-around h-16">
           <div className="flex items-center w-[250px]">
             <a href="/" className="text-black text-2xl font-bold">
@@ -168,7 +183,7 @@ const Navbar = () => {
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -10 }}
                         transition={{ duration: 0.3 }}
-                        className="absolute left-0 mt-2 w-48 rounded-md shadow-3xl border-gray-300 shadow bg-[#ffffff] backdrop-blur-lg"
+                        className="absolute left-0 mt-2 w-auto min-w-48 rounded-md shadow-3xl border-gray-300 shadow bg-[#ffffff] backdrop-blur-lg"
                       >
                         <div className="py-1" role="menu">
                           {item.subItems.map((subItem, subIndex) => (
