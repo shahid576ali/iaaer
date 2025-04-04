@@ -11,7 +11,7 @@ const Home = () => {
 
   useEffect(() => {
     // Stop pulsing after 5 seconds to avoid being too distracting
-    const timer = setTimeout(() => setPulsing(false), 5000);
+    const timer = setTimeout(() => setPulsing(false), 10000);
     return () => clearTimeout(timer);
   }, []);
 
