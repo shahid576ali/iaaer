@@ -1,0 +1,51 @@
+.main-card {
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 900px;
+  box-shadow: 0 6px 20px rgb(0, 0, 0, 0.1);
+  line-height: 1.6;
+  font-family: Arial, sans-serif;
+  margin-left: 30px;
+  border-top: 2px solid #000000;
+  background: linear-gradient(to bottom, #ffffff, #f2f2f2);
+}
+.main-card h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+.main-card h4 {
+  font-weight: 600;
+  padding-bottom: 7px;
+}
+.main-card p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.05rem;
+  line-height: 1.5;
+  padding-bottom: 10px;
+}
+.main-card a {
+  color: rgb(4, 34, 230);
+  font-size: 0.9rem;
+}
+.main-card hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+.main-card ul {
+  list-style-type: disc;
+  margin-top: 10px;
+  padding-left: 50px;
+}
+.list {
+  margin-left: 50px;
+}
+.list li {
+  list-style-type: circle;
+  font-style: italic;
+  font-size: 0.9rem;
+}
