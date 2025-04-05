@@ -19,7 +19,7 @@ const navItems = [
       { title: "University Members", url: "/about/university-members" },
       { title: "Meetings & Financials", url: "/about/meetings-financials" },
       { title: "Privacy Policy", url: "/about/privacy-policy" },
-      { title: "Contact Us", url: "/about/contact-us" }
+      { title: "Contact Us", url: "/about/contact-us" },
     ],
   },
   {
@@ -43,24 +43,24 @@ const navItems = [
       { title: "Affiliated Journals", url: "/research/affiliated-journals" },
       { title: "Research Grants", url: "/research/research-grants" },
       {
-        title : "Informing the IAASB",
-        url : "/research/informing-the-iaasb"
+        title: "Informing the IAASB",
+        url: "/research/informing-the-iaasb",
       },
       {
-        title : "Informing the IAESB",
-        url : "/research/informing-the-iaesb"
+        title: "Informing the IAESB",
+        url: "/research/informing-the-iaesb",
       },
       {
-        title : "Informing the IASB",
-        url : "/research/informing-the-iasb"
+        title: "Informing the IASB",
+        url: "/research/informing-the-iasb",
       },
       {
         title: "ACCA/IAAER Scholars Program",
         url: "/research/acca-iaaer-scholars-program",
       },
       {
-        title : "Call for Papers",
-        url : "/research/call-for-papers"
+        title: "Call for Papers",
+        url: "/research/call-for-papers",
       },
       {
         title: "IAAER/ACCA Early Career Researcher Development Program",
@@ -76,13 +76,13 @@ const navItems = [
         url: "/institutional-university-members/professional-institutional-members-resources",
       },
       {
-        title : "Academic Institutional Members' Resources",
-        url : "/institutional-university-members/academic-institutional-members-resources"
+        title: "Academic Institutional Members' Resources",
+        url: "/institutional-university-members/academic-institutional-members-resources",
       },
       {
-        title : "University Members' Resources",
-        url : "/institutional-university-members/university-members-resources"
-      }
+        title: "University Members' Resources",
+        url: "/institutional-university-members/university-members-resources",
+      },
     ],
   },
   {
