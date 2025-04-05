@@ -5,6 +5,7 @@ import { Route, Routes } from "react-router-dom";
 import Current from './pages/News/Current/Current'
 import Archive from './pages/News/Archive/Archive'
 import Newsletter from "./pages/News/Newsletters/NewsLetter";
+import Scholars from "./pages/Research/Scholars";
 
 
 export default function Page() {
@@ -17,6 +18,7 @@ export default function Page() {
             <Route path="/news/current" element={<Current />} />
             <Route path="/news/newsletters" element={<Newsletter />} />
             <Route path="/news/archive" element={<Archive />} />
+            <Route path="/research/acca-iaaer-scholars-program" element={<Scholars />} />
           </Routes>
         </main>
       <Footer />
