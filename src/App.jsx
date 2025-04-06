@@ -7,6 +7,8 @@ import Archive from "./pages/News/Archive/Archive";
 import Newsletter from "./pages/News/Newsletters/NewsLetter";
 import Affiliated from "./pages/Research/Affiliated/affiliated";
 import Not_Found from "./components/not_found/Not_Found";
+import Iaasb from "./pages/Research/Iaasb/Iaasb";
+import Iaesb from "./pages/Research/Iaesb/Iaesb";
 
 export default function Page() {
   return (
@@ -22,6 +24,8 @@ export default function Page() {
             path="/research/affiliated-journals"
             element={<Affiliated />}
           />
+          <Route path="/research/informing-the-iaasb" element={<Iaasb />} />
+          <Route path="/research/informing-the-iaesb" element={<Iaesb />} />
           <Route path="*" element={<Not_Found />} />
         </Routes>
       </main>
