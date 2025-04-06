@@ -9,6 +9,7 @@ import Affiliated from "./pages/Research/Affiliated/affiliated";
 import Not_Found from "./components/not_found/Not_Found";
 import Iaasb from "./pages/Research/Iaasb/Iaasb";
 import Iaesb from "./pages/Research/Iaesb/Iaesb";
+import Scholars from "./pages/Research/Scholars";
 
 export default function Page() {
   return (
@@ -20,6 +21,7 @@ export default function Page() {
           <Route path="/news/current" element={<Current />} />
           <Route path="/news/newsletters" element={<Newsletter />} />
           <Route path="/news/archive" element={<Archive />} />
+          <Route path="/research/acca-iaaer-scholars-program" element={<Scholars />} />
           <Route
             path="/research/affiliated-journals"
             element={<Affiliated />}

@@ -22,7 +22,8 @@ const Scholars = () => {
       ];
     
   return (
-    <div>
+    <div className="flex justify-center items-center min-h-screen ml-15">
+    <div className="">
         <div className="flex flex-col lg:flex-row gap-6 p-4">
       {/* Left Section: News */}
       <motion.div
@@ -41,14 +42,35 @@ const Scholars = () => {
           Ongoing mentorship is a key component of the ACCA IAAER Scholars Program. A team of IAAER mentors will support the ACCA IAAER scholars. The mentoring process will enhance the Scholars’ exposure to internationally recognized accounting scholars and best practices in accounting and accounting-related education and research, and assist them in becoming part of a global peer network.
           </p>
             <p className="font-bold mt-4">The five second-cohort Scholars are:</p>
-          <ul>
+          <ul className="list-disc pl-5">
             <li>Dr. Karol Marek Klimczak, PhD, Professor and Dean Faculty of Organization and Management Lodz University of Technology, Poland. </li>
             <li>Dr. Joanna Krasodomska, PhD, Professor Krakow University of Economics, Poland.</li>
             <li>Dr. David Mathuva, PhD, Associate Dean Academics and Student Affairs Strathmore University Business School, Kenya. </li>
             <li>Dr. Raquel Sarquis PhD, Professor with Tenure University of São Paulo, Brazil.</li>
             <li>Dr. Wayne van Zijl, PhD, Associate Professor and Assistant Dean Research University of the Witwatersrand, South Africa</li>
           </ul>
+
+          <p className="mt-4">The ACCA IAAER Scholar Mentors for the March 2024 – 2026 cohort include:</p>
+
+          <p className="mt-4">
+          Professors Lisa Baudot HEC Paris, Holger Daske University of Mannheim, Leslie Hodder Indiana University, Patrick Hopkins Indiana University, Kenneth Merkley Indiana University, and Katherine Schipper Duke University. The Scholars program is coordinated by Professor Donna Street, University of Dayton. Funding is provided by ACCA Global. 
+          </p>
+
+          <p className="mt-4">The ACCA IAAER Scholars are appointed for two-year terms and, with the financial support of ACCA, attend IAAER conferences, workshops and other events.</p>
+
+          <p className="mt-4">
+          The first event for the 2024-2026 cohort was held in London November 15-16, 2024, hosted by the ACCA. Prior to the workshop, the Scholars observed a deliverable of Round 8 of the KPMG IAAER Grant Program to inform the International Accounting Standards Board (IASB), hosted by the IASB in Canary Wharf.
+          </p>
+
+          <p className="mt-4">
+          The Scholars will also attend a joint conference of the Southern African Accounting Association (SAAA) and IAAER in Cape Town June 25-27, 2025. 
+          </p>
+
+          <p className="mt-4 mb-4">
+          The long-term goal of the ACCA IAAER Scholars program is to develop the research and teaching skills capacities of accounting scholars in emerging and transitional economies. 
+          </p>
         </div>
+        
       </motion.div>
 
       {/* Right Section: Sponsors & Links */}
@@ -89,6 +111,7 @@ const Scholars = () => {
           </Link>
         </motion.div>
       </motion.div>
+    </div>
     </div>
     </div>
   )
