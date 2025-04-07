@@ -1,15 +1,18 @@
+
 import React from 'react';
 import { useState } from "react";
+import Round2 from './Round2';
 
 const Iaasb = () => {
     const [activeTab, setActiveTab] = useState("Round 1");
+   
   return (
       <div>
       <h2 className='text-2xl font-bold'>Informing the IAESB</h2>
       <p>The third program, funded by ACCA, informs the International Accounting Education Standards Board (IAESB).  One round of projects is complete; topics addressed are Continuing Professional Development in the Asia-Pacific Region, Ethics Education and Training, Non-Technical Skills, and IES 2, 3, and 4 Compliance.<br></br>
       <br></br>
         To see both a summary of the research findings and copies of the full research reports click round 1 below. The second round of projects is in process; to see a summary to the topics being investigated click round 2.</p>
-      <div className="flex space-x-1 rounded-xl bg-gray-200 p-1 mb-8">
+      <div className="flex space-x-1 rounded-xl bg-gray-200 p-1 mb-8 mt-6">
           {["Round 1", "Round 2", "Round 3"].map((tab) => (
             <button
               key={tab}
@@ -28,26 +31,26 @@ const Iaasb = () => {
             <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
                 <p className='text-xl font-bold'>Key Research Into Global Audit Issues Is Announced (funded by ACCA)</p>
                 <ul className='list-disc list-inside'>
-                    <li><a className='text-blue-500'>Original Call for Proposals</a></li>
-                    <li><a className='text-blue-500'>ACCA/IAAER/IAASB Grant Recipients Announcement</a></li>
-                    <li><a className='text-blue-500'>International Symposium on Audit Research (ISAR), June 24-25, 2010: Singapore</a></li>
-                    <li><a className='text-blue-500'>IFAC Press Release: IAASB Welcomes New Auditing Research Initiative</a></li>
+                    <li><a className='text-blue-500 cursor-pointer'>Original Call for Proposals</a></li>
+                    <li><a className='text-blue-500 cursor-pointer'>ACCA/IAAER/IAASB Grant Recipients Announcement</a></li>
+                    <li><a className='text-blue-500 cursor-pointer'>International Symposium on Audit Research (ISAR), June 24-25, 2010: Singapore</a></li>
+                    <li><a className='text-blue-500 cursor-pointer'>IFAC Press Release: IAASB Welcomes New Auditing Research Initiative</a></li>
                 </ul>
                 <br></br>
                 <p><strong>Executive Summaries of Funded Projects</strong></p>
-                <p><a className='text-blue-600'>International Consistency and Convergence in the Application
+                <p><a className='text-blue-600 cursor-pointer'>International Consistency and Convergence in the Application
                    of International Auditing Standards: Evidence from Going Concern Modifications</a>
                 </p>
                 <p>Per Christen Trønnes, University of New South Wales</p>
                 <p>Elizabeth Carson, University of New South Wales</p>
                 <p>Roger Simnett, University of New South Wales</p>
                 <br></br>
-                <p><a className='text-blue-600'>The Implications of XBRL for the Financial Statement Audit</a></p>
+                <p><a className='text-blue-600 cursor-pointer'>The Implications of XBRL for the Financial Statement Audit</a></p>
                 <p>Roger Debreceny, University of Hawaii at Manoa</p>
                 <p>Stephanie Farewell,University of Arkansas at Little Rock</p>
                 <p>Hans Verkruijsse, Tilburg University</p>
                 <br></br>
-                <p><a className='text-blue-600'>Use of Business Risk Audit Perspectives by non-Big 4 Audit Firms</a></p>
+                <p><a className='text-blue-600 cursor-pointer'>Use of Business Risk Audit Perspectives by non-Big 4 Audit Firms</a></p>
                 <p>C. M. van Nieuw Amerongen, Northeastern University</p>
                 <p>J. P.van Buuren, Nyenrode Business University</p>
                 <p>A. Wright, Northeastern University</p>
@@ -112,8 +115,8 @@ const Iaasb = () => {
             <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
             <p className='text-xl font-bold'>Informing the IAASB Standard Setting Process IAAER – KPMG Research Opportunities – Round 2</p>
             <ul className='list-disc list-inside'>
-                    <li><a className='text-blue-500'>Call for proposals</a></li>
-                    <li><a className='text-blue-500'>Grant recipients</a></li>
+                    <li><a className='text-blue-500 cursor-pointer'>Call for proposals</a></li>
+                    <li><a className='text-blue-500 cursor-pointer'>Grant recipients</a></li>
             </ul>
             <br></br>
             <p>The International Association for Accounting Education and Research
@@ -123,30 +126,7 @@ const Iaasb = () => {
                   have been awarded for the following research projects:
             </p>
             <br></br>
-            <p><strong>A Study of Skepticism Traits in Auditing Financial Statements</strong><br></br>
-              Takiah Mohd Iskandar (Universiti Kebangsaan Malaysia)<br></br>
-              Sayed Alwee Hussnie Sayed Hussin (National Audit Department of Malaysia)<br></br>
-              and Romlah Jaafar (Universiti Kebangsaan Malaysia)<br></br>
-              Norman Mohd Saleh (Universiti Kebangsaan Malaysia)<br></br>
-              <strong>An Examination of the Implications of Integrated Reporting on Investor Judgment</strong><br></br>
-              Diane Janvrin (Iowa State University)<br></br>
-              William Dilla (Iowa State University)<br></br>
-              Jon Perkins (Iowa State University)<br></br>
-              and Robyn Raschke (University of Nevada – Las Vegas)<br></br>
-              <strong>Auditors’ Materiality Judgments under Integrated Reporting: the Impact of Strategic Significance of Reported</strong><br></br>
-              <strong>Information and Integrativeness of Performance Information Systems</strong><br></br>
-              Mandy Cheng (University of New South Wales)<br></br>
-              and Wendy Green (University of New South Wales)<br></br>
-              <strong>Hindsight Bias and Professional Skepticism: Does the End Justify the Means?</strong><br></br>
-              Joseph Brazel (North Carolina State University)<br></br>
-              Tammie R. Schaefer (University of South Carolina)<br></br>
-              and Bryan W. Stewart (University of South Carolina)<br></br>
-              <strong>The Informational Value of Emphasis of Matter Paragraphs and Auditor Commentaries:</strong><br></br>
-              <strong>Evidence from Eye-tracking Studies</strong><br></br>
-              Louis-Philippe Sirois (HEC Montréal)<br></br>
-              Palash Bera (Saint Louis University)<br></br>
-              Jean Bédard (Laval University)<br></br>
-              and Anand Jha (Texas A&M University)</p>
+            <Round2 />
               <br></br>
               <p>Funding for this program is provided by the KPMG Foundation and KPMG International. Funded projects will be
                 showcased at two events in London involving representatives from the IAASB and renowned accounting researchers.
@@ -160,7 +140,7 @@ const Iaasb = () => {
           <div className="space-y-8">
             {/* Round 3 */}
             <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
-              <p className='text-blue-600'>ICAS & IAAER Call for Research to Inform the IAASB Standard Setting Process</p>
+              <p className='text-blue-600 cursor-pointer'>ICAS & IAAER Call for Research to Inform the IAASB Standard Setting Process</p>
               <br></br>
               <p>The International Association for Accounting Education and Research (IAAER) and The Institute of 
                 Chartered Accountants of Scotland (ICAS) are pleased to invite research proposals under the Informing
@@ -170,7 +150,7 @@ const Iaasb = () => {
                   </p>
               <br></br>
               <p>The IAAER is delighted to announce a new global call for research to gather independent evidence
-                 to inform the IAASB’s crucial standard setting process: <a className='text-blue-600'>IAAER Press Release</a>.
+                 to inform the IAASB’s crucial standard setting process: <a className='text-blue-600 cursor-pointer'>IAAER Press Release</a>.
               </p>  
             </div>
           </div>
