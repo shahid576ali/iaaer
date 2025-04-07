@@ -10,6 +10,9 @@ import Not_Found from "./components/not_found/Not_Found";
 import Iaasb from "./pages/Research/Iaasb/Iaasb";
 import Iaesb from "./pages/Research/Iaesb/Iaesb";
 import Scholars from "./pages/Research/Scholars";
+import PIMR from "./pages/InstitutionalMembers/PIMR/PIMR";
+
+
 
 export default function Page() {
   return (
@@ -29,6 +32,7 @@ export default function Page() {
           <Route path="/research/informing-the-iaasb" element={<Iaasb />} />
           <Route path="/research/informing-the-iaesb" element={<Iaesb />} />
           <Route path="*" element={<Not_Found />} />
+          <Route path="institutional-university-members/professional-institutional-members-resources" element={<PIMR />} />
         </Routes>
       </main>
       <Footer />
