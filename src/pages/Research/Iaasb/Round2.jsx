@@ -251,9 +251,6 @@ const researchPapers = [
           )}
         </div>
 
-        <div className="mt-8 text-center text-gray-500 text-sm">
-          <p>© 2023 Academic Research Database. All rights reserved.</p>
-        </div>
       </div>
     </>
   )
