@@ -11,6 +11,9 @@ import Iaasb from "./pages/Research/Iaasb/Iaasb";
 import Iaesb from "./pages/Research/Iaesb/Iaesb";
 import Scholars from "./pages/Research/Scholars";
 import PIMR from "./pages/InstitutionalMembers/PIMR/PIMR";
+import MissionStatement from "./pages/About/MissionStatement/MissionStatement";
+import organizationData from "./pages/About/MissionStatement/Data";
+import History from "./pages/About/History/History";
 
 
 
@@ -18,9 +21,15 @@ export default function Page() {
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
-      <main className="max-w-full lg:mr-28 mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <main className="max-w-full lg:mr-28 mx-auto px-4 sm:px-6 lg:px-8 py-4">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/about/mission-statement" element={<MissionStatement
+        organization={organizationData}
+        mission={organizationData.mission}
+        activities={organizationData.activities}
+      />} />
+          <Route path="/about/history" element={<History />} />
           <Route path="/news/current" element={<Current />} />
           <Route path="/news/newsletters" element={<Newsletter />} />
           <Route path="/news/archive" element={<Archive />} />
