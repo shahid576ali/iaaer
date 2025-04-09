@@ -42,26 +42,11 @@ const navItems = [
     subItems: [
       { title: "Affiliated Journals", url: "/research/affiliated-journals" },
       { title: "Research Grants", url: "/research/research-grants" },
-      {
-        title: "Informing the IAASB",
-        url: "/research/informing-the-iaasb",
-      },
-      {
-        title: "Informing the IAESB",
-        url: "/research/informing-the-iaesb",
-      },
-      {
-        title: "Informing the IASB",
-        url: "/research/informing-the-iasb",
-      },
-      {
-        title: "ACCA/IAAER Scholars Program",
-        url: "/research/acca-iaaer-scholars-program",
-      },
-      {
-        title: "Call for Papers",
-        url: "/research/call-for-papers",
-      },
+      { title: "Informing the IAASB", url: "/research/informing-the-iaasb" },
+      { title: "Informing the IAESB", url: "/research/informing-the-iaesb" },
+      { title: "Informing the IASB", url: "/research/informing-the-iasb" },
+      { title: "ACCA/IAAER Scholars Program", url: "/research/acca-iaaer-scholars-program" },
+      { title: "Call for Papers", url: "/research/call-for-papers" },
       {
         title: "IAAER/ACCA Early Career Researcher Development Program",
         url: "/research/iaaer-acca-early-career-researcher-development-program",
@@ -113,6 +98,7 @@ const navItems = [
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeSubmenu, setActiveSubmenu] = useState(null);
+  const [scrolled, setScrolled] = useState(false);
   const navRef = useRef(null);
 
   useEffect(() => {
@@ -122,9 +108,15 @@ const Navbar = () => {
       }
     };
 
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 10);
+    };
+
     document.addEventListener("mousedown", handleClickOutside);
+    window.addEventListener("scroll", handleScroll);
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -137,8 +129,18 @@ const Navbar = () => {
     setActiveSubmenu(activeSubmenu === index ? null : index);
   };
 
+  const closeMobileMenu = () => {
+    setMobileMenuOpen(false);
+    setActiveSubmenu(null);
+  };
+
   return (
-    <nav className="fixed top-0 z-50 w-full border-b border-gray-200 bg-gray-100 shadow">
+    <nav
+      className={`w-full border-b border-gray-200 bg-gray-100 shadow transition-all duration-300 z-50 ${
+        scrolled ? "fixed top-0" : "relative"
+      }`}
+      ref={navRef}
+    >
       <div className="px-4 lg:mr-10">
         <div className="flex items-center justify-between lg:justify-around h-16">
           <div className="flex items-center w-[250px]">
@@ -151,12 +153,14 @@ const Navbar = () => {
               {navItems.map((item, index) => (
                 <div key={index} className="relative group">
                   <Link
-                    to={item.url}
-                    className="text-black cursor-pointer hover:bg-gray-200 px-3 py-2 rounded-md text-[14px] font-medium"
+                    to={item.url || "#"}
+                    className="text-black cursor-pointer hover:bg-gray-200 px-3 py-2 rounded-md text-[1vw] font-medium"
                     onClick={(e) => {
                       if (item.subItems) {
                         e.preventDefault();
                         toggleSubmenu(index);
+                      } else {
+                        setActiveSubmenu(null);
                       }
                     }}
                   >
@@ -169,15 +173,15 @@ const Navbar = () => {
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -10 }}
                         transition={{ duration: 0.3 }}
-                        className="absolute left-0 mt-2 w-auto min-w-48 rounded-md shadow-3xl border-gray-300 shadow bg-[#ffffff] backdrop-blur-lg"
+                        className="absolute left-0 mt-2 w-auto min-w-48 rounded-md shadow-3xl border-gray-300 shadow bg-white backdrop-blur-lg"
                       >
                         <div className="py-1" role="menu">
                           {item.subItems.map((subItem, subIndex) => (
                             <Link
                               key={subIndex}
                               to={subItem.url}
-                              className="block px-4 py-2 text-sm text-balck hover:bg-gray-200 hover:text-gray-900"
-                              role="menuitem"
+                              className="block px-4 py-2 text-sm text-black hover:bg-gray-200 hover:text-gray-900"
+                              onClick={() => setActiveSubmenu(null)}
                             >
                               {subItem.title}
                             </Link>
@@ -201,6 +205,8 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+
+      {/* Mobile View */}
       <AnimatePresence>
         {mobileMenuOpen && (
           <motion.div
@@ -208,27 +214,23 @@ const Navbar = () => {
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden px-2 pt-2 pb-3 space-y-1 sm:px-3"
+            className="lg:hidden px-2 pt-2 pb-3 space-y-1 sm:px-3"
           >
             {navItems.map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.3 }}
-              >
-                <Link
-                  to={item.url}
-                  className="text-black hover:bg-gray-300 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium"
-                  onClick={(e) => {
-                    if (item.subItems) {
-                      e.preventDefault();
-                      toggleSubmenu(index);
-                    }
-                  }}
+              <div key={index}>
+                <button
+                  className="w-full text-left text-black font-medium text-[15px] flex justify-between items-center py-2"
+                  onClick={() =>
+                    item.subItems
+                      ? toggleSubmenu(index)
+                      : closeMobileMenu()
+                  }
                 >
                   {item.title}
-                </Link>
+                  {item.subItems && (
+                    <span>{activeSubmenu === index ? "−" : "+"}</span>
+                  )}
+                </button>
                 <AnimatePresence>
                   {item.subItems && activeSubmenu === index && (
                     <motion.div
@@ -242,7 +244,8 @@ const Navbar = () => {
                         <Link
                           key={subIndex}
                           to={subItem.url}
-                          className="text-gray-800 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                          onClick={closeMobileMenu}
+                          className="block py-2 px-1 text-sm text-gray-700 hover:bg-gray-200 rounded"
                         >
                           {subItem.title}
                         </Link>
@@ -250,7 +253,7 @@ const Navbar = () => {
                     </motion.div>
                   )}
                 </AnimatePresence>
-              </motion.div>
+              </div>
             ))}
           </motion.div>
         )}

@@ -16,9 +16,15 @@ export default function Page() {
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
-      <main className="max-w-full lg:mr-28 mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <main className="max-w-full lg:mr-28 mx-auto px-4 sm:px-6 lg:px-8 py-4">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/about/mission-statement" element={<MissionStatement
+        organization={organizationData}
+        mission={organizationData.mission}
+        activities={organizationData.activities}
+      />} />
+          <Route path="/about/history" element={<History />} />
           <Route path="/news/current" element={<Current />} />
           <Route path="/news/newsletters" element={<Newsletter />} />
           <Route path="/news/archive" element={<Archive />} />
@@ -34,6 +40,7 @@ export default function Page() {
           <Route path="/research/informing-the-iaasb" element={<Iaasb />} />
           <Route path="/research/informing-the-iaesb" element={<Iaesb />} />
           <Route path="*" element={<Not_Found />} />
+          <Route path="institutional-university-members/professional-institutional-members-resources" element={<PIMR />} />
         </Routes>
       </main>
       <Footer />
