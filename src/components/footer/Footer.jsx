@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white py-8">
+    <footer className="bg-gray-900 w-full text-white py-8">
       <div className="container mx-auto px-6 lg:px-16">
         <h2 className="text-2xl font-bold border-b border-gray-700 pb-2 mb-4">
           Contact Us

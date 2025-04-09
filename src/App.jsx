@@ -5,7 +5,6 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Current from "./pages/Home/Current.jsx";
 import Newsletter from "./pages/Home/QuarterlyNewsLetter.jsx";
 import Archive from "./pages/Home/Archive.jsx";
-import Membership from "./pages/Home/Membership.jsx";
 
 export default function Page() {
   return (
@@ -18,7 +17,6 @@ export default function Page() {
             <Route path="/services/consulting" element={<Current />} />
             <Route path="/services/design" element={<Newsletter />} />
             <Route path="/services/development" element={<Archive />} />
-            <Route path="/membership" element={<Membership />} />
           </Routes>
         </main>
       </BrowserRouter>
