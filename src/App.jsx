@@ -11,6 +11,14 @@ import Iaasb from "./pages/Research/Iaasb/Iaasb";
 import Iaesb from "./pages/Research/Iaesb/Iaesb";
 import Scholars from "./pages/Research/Scholars";
 import Researcher from "./pages/Research/ResearcherDevelopment/ResearcherDevelopment";
+import MissionStatement from "./pages/About/MissionStatement/MissionStatement.jsx";
+// import MissionStatement from "./pages/About/MissionStatement/MissionStatement.jsx";
+import organizationData from "./pages/About/MissionStatement/Data";
+import PIMR from "./pages/InstitutionalMembers/PIMR/PIMR";
+
+
+
+
 
 export default function Page() {
   return (
@@ -23,7 +31,7 @@ export default function Page() {
         organization={organizationData}
         mission={organizationData.mission}
         activities={organizationData.activities}
-      />} />
+      />}/>
           <Route path="/about/history" element={<History />} />
           <Route path="/news/current" element={<Current />} />
           <Route path="/news/newsletters" element={<Newsletter />} />
