@@ -10,10 +10,13 @@ import Not_Found from "./components/not_found/Not_Found";
 import Iaasb from "./pages/Research/Iaasb/Iaasb";
 import Iaesb from "./pages/Research/Iaesb/Iaesb";
 import Scholars from "./pages/Research/Scholars";
-import PIMR from "./pages/InstitutionalMembers/PIMR/PIMR";
-import MissionStatement from "./pages/About/MissionStatement/MissionStatement";
+import Researcher from "./pages/Research/ResearcherDevelopment/ResearcherDevelopment";
+import MissionStatement from "./pages/About/MissionStatement/MissionStatement.jsx";
+// import MissionStatement from "./pages/About/MissionStatement/MissionStatement.jsx";
 import organizationData from "./pages/About/MissionStatement/Data";
-import History from "./pages/About/History/History";
+import PIMR from "./pages/InstitutionalMembers/PIMR/PIMR";
+
+
 
 
 
@@ -28,7 +31,7 @@ export default function Page() {
         organization={organizationData}
         mission={organizationData.mission}
         activities={organizationData.activities}
-      />} />
+      />}/>
           <Route path="/about/history" element={<History />} />
           <Route path="/news/current" element={<Current />} />
           <Route path="/news/newsletters" element={<Newsletter />} />
@@ -37,6 +40,10 @@ export default function Page() {
           <Route
             path="/research/affiliated-journals"
             element={<Affiliated />}
+          />
+           <Route
+            path="/research/iaaer-acca-early-career-researcher-development-program"
+            element={<Researcher />}
           />
           <Route path="/research/informing-the-iaasb" element={<Iaasb />} />
           <Route path="/research/informing-the-iaesb" element={<Iaesb />} />
