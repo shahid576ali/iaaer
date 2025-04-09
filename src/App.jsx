@@ -10,6 +10,7 @@ import Not_Found from "./components/not_found/Not_Found";
 import Iaasb from "./pages/Research/Iaasb/Iaasb";
 import Iaesb from "./pages/Research/Iaesb/Iaesb";
 import Scholars from "./pages/Research/Scholars";
+import Researcher from "./pages/Research/ResearcherDevelopment/ResearcherDevelopment";
 
 export default function Page() {
   return (
@@ -25,6 +26,10 @@ export default function Page() {
           <Route
             path="/research/affiliated-journals"
             element={<Affiliated />}
+          />
+           <Route
+            path="/research/iaaer-acca-early-career-researcher-development-program"
+            element={<Researcher />}
           />
           <Route path="/research/informing-the-iaasb" element={<Iaasb />} />
           <Route path="/research/informing-the-iaesb" element={<Iaesb />} />
